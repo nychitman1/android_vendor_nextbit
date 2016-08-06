@@ -221,8 +221,8 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:system/vendor/lib/libSonyIMX230PdafLibrary.so
 
 PRODUCT_PACKAGES += \
-    libril \
-    libqmiservices
+    libqmiservices \
+    #libril
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
@@ -238,7 +238,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/nextbit/ether/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/nextbit/ether/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-    vendor/nextbit/ether/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/nextbit/ether/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nextbit/ether/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/nextbit/ether/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
