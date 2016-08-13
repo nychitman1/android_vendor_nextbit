@@ -97,6 +97,8 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/nextbit/ether/proprietary/lib/libtfa98xx_hal.so:system/lib/libtfa98xx_hal.so \
     vendor/nextbit/ether/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
+    vendor/nextbit/ether/proprietary/vendor/firmware/btfw32.tlv:system/vendor/firmware/btfw32.tlv \
+    vendor/nextbit/ether/proprietary/vendor/firmware/btnv32.bin:system/vendor/firmware/btnv32.bin \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b00:system/vendor/firmware/fpctzappfingerprint.b00 \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b01:system/vendor/firmware/fpctzappfingerprint.b01 \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b02:system/vendor/firmware/fpctzappfingerprint.b02 \
