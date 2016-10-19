@@ -226,14 +226,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:system/vendor/lib/libSonyIMX230PdafLibrary.so
-
-PRODUCT_PACKAGES += \
-    libril \
-    libqmiservices
-
-ifeq ($(QCPATH),)
-PRODUCT_COPY_FILES += \
+    vendor/nextbit/ether/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:system/vendor/lib/libSonyIMX230PdafLibrary.so \
     vendor/nextbit/ether/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/nextbit/ether/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/nextbit/ether/proprietary/bin/cnd:system/bin/cnd \
@@ -545,8 +538,9 @@ PRODUCT_PACKAGES += \
     ims \
     imssettings \
     qcnvitems \
-    qcrilhook
-endif
+    qcrilhook \
+    libril \
+    libqmiservices
 
 -include vendor/extra/devices.mk
 ifneq ($(call is-qc-perf-target),true)
