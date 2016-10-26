@@ -515,7 +515,23 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/nextbit/ether/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/nextbit/ether/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/nextbit/ether/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/nextbit/ether/proprietary/vendor/qcril.db:system/vendor/qcril.db \
+    vendor/nextbit/ether/proprietary/bin/iop:system/bin/iop \
+    vendor/nextbit/ether/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
+    vendor/nextbit/ether/proprietary/lib/libqti-iop.so:system/lib/libqti-iop.so \
+    vendor/nextbit/ether/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
@@ -541,24 +557,3 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     libril \
     libqmiservices
-
--include vendor/extra/devices.mk
-ifneq ($(call is-qc-perf-target),true)
-PRODUCT_COPY_FILES += \
-    vendor/nextbit/ether/proprietary/bin/iop:system/bin/iop \
-    vendor/nextbit/ether/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
-    vendor/nextbit/ether/proprietary/lib/libqti-iop.so:system/lib/libqti-iop.so \
-    vendor/nextbit/ether/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
-    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
-    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
-    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
-    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
-    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
-endif
