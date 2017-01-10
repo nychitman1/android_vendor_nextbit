@@ -532,9 +532,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
     vendor/nextbit/ether/proprietary/lib64/librilqmiservices.so:system/lib64/librilqmiservices.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so \
-    vendor/nextbit/ether/proprietary/lib64/libprotobuf-cpp-full.so:system/lib64/libprotobuf-cpp-full.so \
-    vendor/nextbit/ether/proprietary/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so
+    vendor/nextbit/ether/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so
 
 
 PRODUCT_PACKAGES += \
