@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/nextbit/ether/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/nextbit/ether/proprietary/bin/energy-awareness:system/bin/energy-awareness \
+    vendor/nextbit/ether/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/nextbit/ether/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/nextbit/ether/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/nextbit/ether/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
